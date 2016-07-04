@@ -17,6 +17,7 @@
 		12D901001D26C4F70062D4BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D900FF1D26C4F70062D4BE /* Constants.swift */; };
 		12D901031D26C5410062D4BE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D901021D26C5410062D4BE /* APIManager.swift */; };
 		12D901051D26C5620062D4BE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D901041D26C5620062D4BE /* Weather.swift */; };
+		12D901071D2A3FDD0062D4BE /* JsonDataExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D901061D2A3FDD0062D4BE /* JsonDataExtractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		12D900FF1D26C4F70062D4BE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		12D901021D26C5410062D4BE /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		12D901041D26C5620062D4BE /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		12D901061D2A3FDD0062D4BE /* JsonDataExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDataExtractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				12D901021D26C5410062D4BE /* APIManager.swift */,
 				12D901041D26C5620062D4BE /* Weather.swift */,
+				12D901061D2A3FDD0062D4BE /* JsonDataExtractor.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				12D900CF1D26B6F30062D4BE /* ViewController.swift in Sources */,
 				12D900CD1D26B6F30062D4BE /* AppDelegate.swift in Sources */,
 				12D901001D26C4F70062D4BE /* Constants.swift in Sources */,
+				12D901071D2A3FDD0062D4BE /* JsonDataExtractor.swift in Sources */,
 				12D901051D26C5620062D4BE /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

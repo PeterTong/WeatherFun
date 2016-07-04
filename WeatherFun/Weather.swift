@@ -9,16 +9,29 @@
 import Foundation
 
 class Weather {
+	// (set) mean only in this class inializing variable, but in other class can get/access the varible
+	private(set) var currentTime: Int
+	private(set) var currentSummary: String
+	private(set) var currentPrecipType: String
+	private(set) var currentPrecipProbability: Double
+	private(set) var currentTemperature: Double
+	private(set) var currentApparentTemperature: Double
+	private(set) var currentHumidity: Double
+	private(set) var currentVisibility: Double
 	
-	private var _currentTime: Int
-	private var _currentSummary: String
-	private var _currentPrecipType: String
-	private var _currentPrecipProbability: Int
-	private var _currentTemperature: Int
-	private var _currentApparentTemperature: Int
-	private var _currentHumidity: Int
-	private var _currentVisibility: Int
+	init(currentTime: Int, currentSummary:String,currentPrecipType:String,currentPrecipProbability:Double, currentTemperature:Double,currentApparentTemperature:Double,currentHumidity:Double, currentVisibility: Double ){
+		
+		self.currentTime = currentTime
+		self.currentSummary = currentSummary
+		self.currentPrecipType  = currentPrecipType
+		self.currentPrecipProbability = currentPrecipProbability
+		self.currentTemperature = currentTemperature
+		self.currentApparentTemperature = currentApparentTemperature
+		self.currentHumidity = currentHumidity
+		self.currentVisibility = currentVisibility
+	}
 	
+	/*
 	//Make a getter 
 	var currentTime:Int {
 		return _currentTime
@@ -55,69 +68,56 @@ class Weather {
 	var currentVisibility: Int{
 		return _currentVisibility
 	}
+*/
 	
-	
+	/*
 	init(currentWeatherData: JSONDictionary){
 		
-		// Current Time
-		if let time = currentWeatherData["time"] as? Int {
-			_currentTime = time
-			
-		}else{
-			_currentTime = 0
-		}
-		
-		// Current Summary 
-		if let summary = currentWeatherData["summary"] as? String{
-			_currentSummary = summary
-		}else{
-			_currentSummary = ""
-		}
-		
-		// Current Precipitation Type 
-		if let precipType = currentWeatherData["precipType"] as? String {
-			_currentPrecipType = precipType
-		}else{
-			_currentPrecipType = ""
-		}
-		
-		// A numerical value between 0 and 1 (inclusive) representing the probability of precipitation occurring at the given time
-		if let precipProbabiliy = currentWeatherData["precipProbabiliy"] as? Int {
-			_currentPrecipProbability = precipProbabiliy
-		}else{
-			_currentPrecipProbability = 0
-		}
-		
-		// Current Temperature
-		if let temperature = currentWeatherData["temperature"] as? Int {
-			_currentTemperature = temperature
-		}else{
-			_currentTemperature = 0
-		}
-		
-		// Current Human Feel temperature
-		if let apparentTemperature = currentWeatherData["apparentTemperature"] as? Int{
-			_currentApparentTemperature = apparentTemperature
-		}else{
-			_currentApparentTemperature = 0
-		}
-		// Current Humidity
-		if let humidity = currentWeatherData["humidity"] as? Int {
-			_currentHumidity = humidity
-		}else{
-			_currentHumidity = 0
-		}
-		
-		// Current visibility. A numerical value representing the average visibility in miles, capped at 10 miles.
-		if let visibility = currentWeatherData["visibility"] as? Int{
-			_currentVisibility = visibility
-			
-		}else{
-			_currentVisibility = 0
-		}
+//		// Current Time
+//		if let time = currentWeatherData["time"] as? Int {
+//			_currentTime = time
+//			
+//		}
+//		
+//		// Current Summary 
+//		if let summary = currentWeatherData["summary"] as? String{
+//			_currentSummary = summary
+//		}
+//		
+//		// Current Precipitation Type 
+//		if let precipType = currentWeatherData["precipType"] as? String {
+//			_currentPrecipType = precipType
+//		}
+//		
+//		// A numerical value between 0 and 1 (inclusive) representing the probability of precipitation occurring at the given time
+//		if let precipProbabiliy = currentWeatherData["precipProbabiliy"] as? Int {
+//			_currentPrecipProbability = precipProbabiliy
+//		}
+//		
+//		// Current Temperature
+//		if let temperature = currentWeatherData["temperature"] as? Int {
+//			_currentTemperature = temperature
+//		}
+//		
+//		// Current Human Feel temperature
+//		if let apparentTemperature = currentWeatherData["apparentTemperature"] as? Int{
+//			_currentApparentTemperature = apparentTemperature
+//		}
+//		// Current Humidity
+//		if let humidity = currentWeatherData["humidity"] as? Int {
+//			_currentHumidity = humidity
+//		}
+//		
+//		// Current visibility. A numerical value representing the average visibility in miles, capped at 10 miles.
+//		if let visibility = currentWeatherData["visibility"] as? Int{
+//			_currentVisibility = visibility
+//			
+//		}
 		
 		
 	}
+	*/
+	
 	
 	
 	
